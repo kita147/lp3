@@ -129,7 +129,7 @@ a {
 }
 
 .header__container {
-    padding: 1rem 1rem 1rem 1.2rem;
+    padding: 1rem 0.9rem 1rem 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,9 +150,10 @@ a {
 .header__btn-pink {
     width: 10.7rem;
     height: 3.1rem;
-    display: inline-flex;  /* テキストとアイコンを横並びに */
-    align-items: center;   /* 垂直方向の中央揃え */
-    justify-content: center; /* ボタン内の中央寄せ */
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
     font-size: 1.2rem;
     color: #fff;
     background-color: #fa7da3;
@@ -164,10 +165,12 @@ a {
 .header__btn-green {
     width: 17.4rem;
     height: 3.1rem;
-    display: inline-flex;  /* テキストとアイコンを横並びに */
-    align-items: center;   /* 垂直方向の中央揃え */
-    justify-content: center; /* ボタン内の中央寄せ */
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
     font-size: 1.2rem;
+    letter-spacing: 0.02em;
     color: #fff;
     background-color: #49c43d;
     border-radius: 3.4rem;
@@ -178,15 +181,7 @@ a {
 .header__arrow {
     width: 0.6rem;
     height: 1rem;
-    margin-left: 0;  /* `gap` を使うので `margin-left` は不要 */
-}
-
-.color-green {
-    background-color: #49c43d;
-}
-
-.color-pink {
-    background-color: #fa7da3;
+    margin-left: 0.8rem;
 }
 
 .header__text-mini {
