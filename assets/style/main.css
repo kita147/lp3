@@ -262,6 +262,25 @@ a {
     line-height: 1;
 }
 
+@media (min-width: 768px) {
+    .hero {
+        height: 61.2rem;
+        background-image: url(/assets/image/main_visual_pc.jpg);
+    }
+}
+
+.hero__container {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .hero__container {
+        max-width: 103rem;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+}
+
 .hero__box-upper {
     display: flex;
     justify-content: space-between;
@@ -270,6 +289,13 @@ a {
 .hero__box-left {
     text-align: center;
     padding: 2rem 0 1.8rem 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .hero__box-left {
+        text-align: right;
+        padding: 2rem 0 1.8rem 1.7rem;
+    }
 }
 
 .hero__text-zen {
@@ -281,6 +307,19 @@ a {
     margin-top: 0.8rem;
 }
 
+@media (min-width: 768px) {
+    .hero__text-zen {
+        font-size: 12.215rem;
+        text-shadow: 0 0 30px rgba(250, 125, 163, 0.8);
+        filter: drop-shadow(0 0 20px rgba(250, 125, 163, 0.8));
+    }
+
+    .hero__text-kao {
+        font-size: 3.6rem;
+        margin-top: 2.3rem;
+        margin-right: -3.1rem;
+    }
+}
 
 .hero__box-right {
     width: 18.7rem;
@@ -293,13 +332,27 @@ a {
     padding: 2.4rem 2.5rem;
 }
 
+@media (min-width: 768px) {
+    .hero__box-right {
+        width: 42.3rem;
+        height: 22.2rem;
+        padding: 4.4rem 5.6rem;
+    }
+}
+
 .hero__text-box-a {
     display: flex;
     flex-direction: column;
     row-gap: 1.2rem;
 }
 
-.hero__text-ima{
+@media (min-width: 768px) {
+    .hero__text-box-a {
+        row-gap: 3.3rem;
+    }
+}
+
+.hero__text-ima {
     font-size: 1.3rem;
     font-weight: 700;
     color: #fa7da3;
@@ -326,12 +379,39 @@ a {
     color: #fffd7a;
 }
 
+@media (min-width: 768px) {
+    .hero__text-ima {
+        font-size: 2.9rem;
+        padding: 0.9rem;
+    }
+
+    .hero__text-syo {
+        font-size: 5.4rem;
+    }
+
+    .hero__text-zero {
+        font-size: 17rem;
+    }
+
+    .hero__text-yen {
+        font-size: 8.1rem;
+    }
+}
+
 .hero__box-lower {
     margin: 0 0 0 auto;
     padding: 0.8rem 2.6rem;
 }
 
+@media (min-width: 768px) {
+    .hero__box-lower {
+        padding: 0.9rem 0;
+    }
+}
+
 .hero__price-monthly {
+    font-family: "Outfit", serif;
+    font-weight: 400;
     font-size: 1.4rem;
     text-align: right;
     margin-bottom: 2.5rem;
@@ -339,7 +419,18 @@ a {
 
 .hero__price-monthly-small {
     font-size: 0.9rem;
+}
 
+@media (min-width: 768px) {
+    .hero__price-monthly {
+        font-size: 2.64rem;
+        margin-bottom: 5.2rem;
+        padding-right: 6.2rem;
+    }
+
+    .hero__price-monthly-small {
+        font-size: 1.7rem;
+    }
 }
 
 .hero__text-box-b {
@@ -347,6 +438,13 @@ a {
     flex-direction: column;
     row-gap: 1.1rem;
     align-items: flex-end;
+    /* 右揃えにする */
+}
+
+@media (min-width: 768px) {
+    .hero__text-box-b {
+        row-gap: 2rem;
+    }
 }
 
 .hero__waku {
@@ -355,4 +453,12 @@ a {
     text-align: center;
     border: solid 1px #fff;
     padding: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .hero__waku {
+        width: 42.3rem;
+        font-size: 2.8rem;
+        padding: 2rem;
+    }
 }
