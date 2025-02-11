@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    font-family: "Noto Serif JP", serif;
+    font-family: "Noto Sans JP", serif;
     font-size: 1.6rem;
     font-weight: 400;
     font-style: normal;
@@ -248,3 +248,111 @@ a {
 }
 
 /* ヘッダーここまで ----------------------------------------- */
+
+/* ヒーロービューここから ----------------------------------------- */
+.hero {
+    /*margin-top: 7rem;*/
+    width: 100%;
+    height: 31.4rem;
+    background-image: url(/assets/image/main_visual_sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 1;
+}
+
+.hero__box-upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__box-left {
+    text-align: center;
+    padding: 2rem 0 1.8rem 1.7rem;
+}
+
+.hero__text-zen {
+    font-size: 4.2rem;
+}
+
+.hero__text-kao {
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+
+.hero__box-right {
+    width: 18.7rem;
+    height: 10.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 2.4rem 2.5rem;
+}
+
+.hero__text-box-a {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.hero__text-ima{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fa7da3;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.hero__text-syo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.hero__text-zero {
+    display: flex;
+    align-items: baseline;
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: #fffd7a;
+}
+
+.hero__text-yen {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: #fffd7a;
+}
+
+.hero__box-lower {
+    margin: 0 0 0 auto;
+    padding: 0.8rem 2.6rem;
+}
+
+.hero__price-monthly {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.hero__price-monthly-small {
+    font-size: 0.9rem;
+
+}
+
+.hero__text-box-b {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1rem;
+    align-items: flex-end;
+}
+
+.hero__waku {
+    width: 13.3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border: solid 1px #fff;
+    padding: 0.8rem;
+}
