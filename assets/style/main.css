@@ -476,6 +476,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 0.7rem;
 }
 .gift__text-now::after {
   transform: scaleX(-1);
@@ -485,11 +486,13 @@ a {
   .gift__text-now {
     font-size: 3.4rem;
     margin-bottom: 1.7rem;
+    align-items: flex-start;
   }
   .gift__text-now::before, .gift__text-now::after {
     width: 2.6rem;
     height: 4.1rem;
     background-image: url("/assets/image/slash_pc.svg");
+    margin: 0 1.1rem;
   }
 }
 .gift__box {
