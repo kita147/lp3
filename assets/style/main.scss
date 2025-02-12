@@ -30,9 +30,9 @@ html {
 }
 
 /* 変数 -----------------------------------------*/
-:root {
-    --pad-sp: 1.2rem;
-}
+$main-pink: #fa7da3;
+$pad-sp: 2rem;
+
 
 /* 全体的な設定 -----------------------------------------*/
 * {
@@ -51,6 +51,7 @@ body {
     color: #333;
 }
 
+p,
 span,
 th,
 h1,
@@ -462,3 +463,82 @@ a {
         padding: 2rem;
     }
 }
+
+/* 3回プレゼントここから ----------------------------------------- */
+.gift {
+    background-color: #fffedd;
+}
+
+.under-margin-gift {
+    margin-bottom: 2rem;
+}
+
+.gift__container {
+    padding: 2.3rem $pad-sp 1.7rem;
+}
+
+.gift__text-now {
+    font-size: 2.1rem;
+    color: $main-pink;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 1.6rem; // SVGのサイズ
+        height: 2.5rem;
+        background-image: url("/assets/image/slash_sp.svg"); // 左スラッシュ画像を適用
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &::after {
+        transform: scaleX(-1); // 右スラッシュを反転
+    }
+}
+
+.gift__box {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    overflow: hidden; // はみ出し防止
+}
+
+.gift__text-face {
+    font-size: 2.1rem;
+    background-color: $main-pink;
+    color: #fff;
+    padding: 0.3rem 0 0.5rem;
+    border: solid 1px $main-pink;
+    border-radius: 1rem 1rem 0 0; // 左上・右上は3rem、左下・右下は0
+}
+
+.gift__text-present {
+    font-size: 2.7rem;
+    color: $main-pink;
+    background-color: #fff;
+    padding: 0.7rem 0 1.1rem;
+    border: solid 1px $main-pink;
+    border-radius: 0 0 1rem 1rem; // 左上・右上は0、左下・右下は3rem
+}
+
+.gift__text-three {
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+}
+
+.gift__text-small {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
