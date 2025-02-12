@@ -443,10 +443,20 @@ a {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .under-margin-gift {
+    margin-bottom: 6.7rem;
+  }
+}
 .gift__container {
   padding: 2.3rem 2rem 1.7rem;
 }
 
+@media (min-width: 768px) {
+  .gift__container {
+    padding: 4.7rem 0 2.9rem;
+  }
+}
 .gift__text-now {
   font-size: 2.1rem;
   color: #fa7da3;
@@ -471,13 +481,28 @@ a {
   transform: scaleX(-1);
 }
 
+@media (min-width: 768px) {
+  .gift__text-now {
+    font-size: 3.4rem;
+    margin-bottom: 1.7rem;
+  }
+  .gift__text-now::before, .gift__text-now::after {
+    width: 2.6rem;
+    height: 4.1rem;
+    background-image: url("/assets/image/slash_pc.svg");
+  }
+}
 .gift__box {
   width: 100%;
-  margin-bottom: 1rem;
   text-align: center;
-  overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  .gift__box {
+    width: 55rem;
+    margin: 0 auto;
+  }
+}
 .gift__text-face {
   font-size: 2.1rem;
   background-color: #fa7da3;
@@ -487,6 +512,12 @@ a {
   border-radius: 1rem 1rem 0 0;
 }
 
+@media (min-width: 768px) {
+  .gift__text-face {
+    font-size: 3.2rem;
+    padding: 0.4rem 0 1rem;
+  }
+}
 .gift__text-present {
   font-size: 2.7rem;
   color: #fa7da3;
@@ -496,13 +527,32 @@ a {
   border-radius: 0 0 1rem 1rem;
 }
 
+@media (min-width: 768px) {
+  .gift__text-present {
+    font-size: 4.367rem;
+    padding: 1rem 0 2.3rem;
+  }
+}
 .gift__text-three {
   font-size: 4.2rem;
   font-weight: 600;
   padding-left: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .gift__text-three {
+    font-size: 6.793rem;
+  }
+}
 .gift__text-small {
   font-size: 1rem;
+  margin-top: 1rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .gift__text-small {
+    font-size: 1.4rem;
+    margin-top: 1.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */

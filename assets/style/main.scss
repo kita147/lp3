@@ -473,8 +473,22 @@ a {
     margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+    .under-margin-gift {
+        margin-bottom: 6.7rem;
+    }
+
+}
+
 .gift__container {
     padding: 2.3rem $pad-sp 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .gift__container {
+        padding: 4.7rem 0 2.9rem;
+    }
+
 }
 
 .gift__text-now {
@@ -491,24 +505,43 @@ a {
     &::after {
         content: "";
         display: inline-block;
-        width: 1.6rem; // SVGのサイズ
+        width: 1.6rem;
         height: 2.5rem;
-        background-image: url("/assets/image/slash_sp.svg"); // 左スラッシュ画像を適用
+        background-image: url("/assets/image/slash_sp.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     &::after {
-        transform: scaleX(-1); // 右スラッシュを反転
+        transform: scaleX(-1);
+    }
+}
+
+@media (min-width: 768px) {
+    .gift__text-now {
+        font-size: 3.4rem;
+        margin-bottom: 1.7rem;
+
+        &::before,
+        &::after {
+            width: 2.6rem;
+            height: 4.1rem;
+            background-image: url("/assets/image/slash_pc.svg");
+        }
     }
 }
 
 .gift__box {
     width: 100%;
-    margin-bottom: 1rem;
     text-align: center;
-    overflow: hidden; // はみ出し防止
+}
+
+@media (min-width: 768px) {
+    .gift__box {
+        width: 55rem;
+        margin: 0 auto;
+    }
 }
 
 .gift__text-face {
@@ -520,6 +553,13 @@ a {
     border-radius: 1rem 1rem 0 0; // 左上・右上は3rem、左下・右下は0
 }
 
+@media (min-width: 768px) {
+    .gift__text-face {
+        font-size: 3.2rem;
+        padding: 0.4rem 0 1rem;
+    }
+}
+
 .gift__text-present {
     font-size: 2.7rem;
     color: $main-pink;
@@ -529,16 +569,36 @@ a {
     border-radius: 0 0 1rem 1rem; // 左上・右上は0、左下・右下は3rem
 }
 
+@media (min-width: 768px) {
+    .gift__text-present {
+        font-size: 4.367rem;
+        padding: 1rem 0 2.3rem;
+    }
+}
+
 .gift__text-three {
     font-size: 4.2rem;
     font-weight: 600;
     padding-left: 1.5rem;
 }
 
+@media (min-width: 768px) {
+    .gift__text-three {
+        font-size: 6.793rem;
+    }
+}
+
 .gift__text-small {
     font-size: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .gift__text-small {
+        font-size: 1.4rem;
+        margin-top: 1.7rem;
+    }
+}
 
 
