@@ -1,0 +1,464 @@
+@charset "UTF-8";
+
+/* フォントの導入 -----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/* コンテンツ幅以下可変レイアウト -----------------------------------------*/
+html {
+    font-size: calc(10 * 100vw / 390);
+    /* 390はSPデザインカンプの幅 */
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: calc(10 * 100vw / 1030);
+        /* 1030はPCカンプのコンテンツ幅 */
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* スムーススクロール -----------------------------------------*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+/* 変数 -----------------------------------------*/
+:root {
+    --pad-sp: 1.2rem;
+}
+
+/* 全体的な設定 -----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans JP", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+    background-color: #fff;
+    color: #333;
+}
+
+span,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* 共通クラス -----------------------------------------*/
+.title-kira {
+    position: relative;
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fa7da3;
+}
+
+.title-kira::before,
+.title-kira::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 5rem;
+    height: 6.2rem;
+    background-image: url('sparkle.svg');
+    /* SVGのパス */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+}
+
+.title-kira::before {
+    left: -6rem;
+    /* 適宜調整 */
+    transform: translateY(-50%) scaleX(-1);
+    /* 左右反転 */
+}
+
+.title-kira::after {
+    right: -6rem;
+    /* 適宜調整 */
+}
+
+/* ヘッダーここから -----------------------------------------*/
+.header {
+    background-color: #fff;
+    height: 6rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 9.2rem;
+    }
+}
+
+.header__container {
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+        max-width: 103rem;
+        margin: 0 auto;
+        padding: 1.8rem 0.3rem;
+    }
+}
+
+.header__logo {
+    width: 7.2rem;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        width: 9.7rem;
+    }
+}
+
+.header__btn-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+@media (min-width: 768px) {
+    .header__btn-box {
+        column-gap: 1.9rem;
+        margin-bottom: 0;
+    }
+}
+
+.header__btn-pink {
+    width: 10.7rem;
+    height: 3.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #fa7da3;
+    border-radius: 3.4rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+@media (min-width: 768px) {
+    .header__btn-pink {
+        width: 19rem;
+        height: 5.1rem;
+        padding: 0 1.6rem;
+        font-size: 2.1rem;
+    }
+}
+
+.header__btn-green {
+    width: 17.4rem;
+    height: 3.1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: #49c43d;
+    border-radius: 3.4rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+@media (min-width: 768px) {
+    .header__btn-green {
+        width: 29.7rem;
+        height: 5.1rem;
+        padding: 0 1.6rem;
+        font-size: 2.1rem;
+        letter-spacing: 0;
+    }
+}
+
+.header__arrow {
+    width: 0.6rem;
+    height: 1rem;
+    margin-left: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .header__arrow {
+        width: 1.1rem;
+        height: 1.8rem;
+    }
+}
+
+.header__text-mini {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header__text-mini {
+        font-size: 1.787rem;
+    }
+}
+
+/* ヘッダーここまで ----------------------------------------- */
+
+/* ヒーロービューここから ----------------------------------------- */
+.hero {
+    /*margin-top: 7rem;*/
+    width: 100%;
+    height: 31.4rem;
+    background-image: url(/assets/image/main_visual_sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 61.2rem;
+        background-image: url(/assets/image/main_visual_pc.jpg);
+    }
+}
+
+.hero__container {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .hero__container {
+        max-width: 103rem;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+}
+
+.hero__box-upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__box-left {
+    text-align: center;
+    padding: 2rem 0 1.8rem 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .hero__box-left {
+        text-align: right;
+        padding: 2rem 0 1.8rem 1.7rem;
+    }
+}
+
+.hero__text-zen {
+    font-size: 4.2rem;
+}
+
+.hero__text-kao {
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .hero__text-zen {
+        font-size: 12.215rem;
+        text-shadow: 0 0 30px rgba(250, 125, 163, 0.8);
+        filter: drop-shadow(0 0 20px rgba(250, 125, 163, 0.8));
+    }
+
+    .hero__text-kao {
+        font-size: 3.6rem;
+        margin-top: 2.3rem;
+        margin-right: -3.1rem;
+    }
+}
+
+.hero__box-right {
+    width: 18.7rem;
+    height: 10.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 2.4rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero__box-right {
+        width: 42.3rem;
+        height: 22.2rem;
+        padding: 4.4rem 5.6rem;
+    }
+}
+
+.hero__text-box-a {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .hero__text-box-a {
+        row-gap: 3.3rem;
+    }
+}
+
+.hero__text-ima {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fa7da3;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.hero__text-syo {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.hero__text-zero {
+    display: flex;
+    align-items: baseline;
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: #fffd7a;
+}
+
+.hero__text-yen {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: #fffd7a;
+}
+
+@media (min-width: 768px) {
+    .hero__text-ima {
+        font-size: 2.9rem;
+        padding: 0.9rem;
+    }
+
+    .hero__text-syo {
+        font-size: 5.4rem;
+    }
+
+    .hero__text-zero {
+        font-size: 17rem;
+    }
+
+    .hero__text-yen {
+        font-size: 8.1rem;
+    }
+}
+
+.hero__box-lower {
+    margin: 0 0 0 auto;
+    padding: 0.8rem 2.6rem;
+}
+
+@media (min-width: 768px) {
+    .hero__box-lower {
+        padding: 0.9rem 0;
+    }
+}
+
+.hero__price-monthly {
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.hero__price-monthly-small {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .hero__price-monthly {
+        font-size: 2.64rem;
+        margin-bottom: 5.2rem;
+        padding-right: 6.2rem;
+    }
+
+    .hero__price-monthly-small {
+        font-size: 1.7rem;
+    }
+}
+
+.hero__text-box-b {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.1rem;
+    align-items: flex-end;
+    /* 右揃えにする */
+}
+
+@media (min-width: 768px) {
+    .hero__text-box-b {
+        row-gap: 2rem;
+    }
+}
+
+.hero__waku {
+    width: 13.3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border: solid 1px #fff;
+    padding: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .hero__waku {
+        width: 42.3rem;
+        font-size: 2.8rem;
+        padding: 2rem;
+    }
+}
