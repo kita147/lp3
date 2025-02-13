@@ -445,7 +445,7 @@ a {
 
 @media (min-width: 768px) {
   .under-margin-gift {
-    margin-bottom: 6.7rem;
+    margin-bottom: 6.1rem;
   }
 }
 .gift__container {
@@ -564,6 +564,12 @@ a {
   padding: 0 2rem;
 }
 
+@media (min-width: 768px) {
+  .cv-section__container {
+    max-width: 103rem;
+    margin: 0 auto;
+  }
+}
 .cv-section__title {
   font-size: 2.1rem;
   font-weight: 600;
@@ -573,6 +579,12 @@ a {
   margin-bottom: 1.2rem;
 }
 
+@media (min-width: 768px) {
+  .cv-section__title {
+    font-size: 3.4rem;
+    margin-bottom: 2.1rem;
+  }
+}
 .btn-cv {
   display: flex;
   align-items: center;
@@ -591,6 +603,16 @@ a {
   transition: background-color 0.2s;
 }
 
+@media (min-width: 768px) {
+  .btn-cv {
+    padding-left: 11.8rem;
+    width: 57.1rem;
+    height: 13.1rem;
+    border-radius: 8rem;
+    margin: 0 auto;
+    font-size: 3.4rem;
+  }
+}
 .btn-cv:hover {
   background-color: #40e02f;
 }
@@ -599,12 +621,25 @@ a {
 .btn-cv-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.4; /* 2行の間隔調整 */
+  line-height: 1.4;
 }
 
-/* 矢印アイコン */
+@media (min-width: 768px) {
+  .btn-cv-text {
+    line-height: 1.3;
+  }
+}
 .btn-cv-arrow {
   width: 1.2rem;
   height: 1.9rem;
-  margin-left: 2.6rem; /* テキストとの間隔 */
+  margin-left: 2.6rem;
+  /* テキストとの間隔 */
+}
+
+@media (min-width: 768px) {
+  .btn-cv-arrow {
+    width: 2rem;
+    height: 3.2rem;
+    margin-left: 4.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */
