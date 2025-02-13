@@ -26,7 +26,7 @@
 		"editor.wordWrap": "off", // 行を折り返さない
 		"files.eol": "\n", // 行末文字をLFにする
 		"files.encoding": "utf8", // 文字エンコードをUTF-8にする
-		"files.trimTrailingWhitespace": true, // ファイル保存時に行末の空白を削除する
+		"files.trimTrailingWhitespace": false, // ファイル保存時に行末の空白を削除する
 		"files.insertFinalNewline": false, //ファイル保存時に最後の行に改行を入れる
 		"html.format.enable": true, // VS Code標準のHTML整形機能を有効化
 		"html.format.indentInnerHtml": true, // <head>と<body>タグにインデントを入れる
