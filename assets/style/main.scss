@@ -32,6 +32,7 @@ html {
 /* 変数 -----------------------------------------*/
 $main-pink: #fa7da3;
 $pad-sp: 2rem;
+$max-width-pc: 103rem;
 
 
 /* 全体的な設定 -----------------------------------------*/
@@ -136,6 +137,8 @@ a {
 }
 
 .header__container {
+    max-width: 100%;
+    margin: 0 auto;
     padding: 1rem 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -144,8 +147,7 @@ a {
 
 @media (min-width: 768px) {
     .header__container {
-        max-width: 103rem;
-        margin: 0 auto;
+        max-width: $max-width-pc;
         padding: 1.8rem 0.3rem;
     }
 }
@@ -187,7 +189,7 @@ a {
     background-color: #fa7da3;
     border-radius: 3.4rem;
     cursor: pointer;
-    /* transition: background-color 0.3s ease; */
+    transition: opacity 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -212,7 +214,7 @@ a {
     background-color: #49c43d;
     border-radius: 3.4rem;
     cursor: pointer;
-    /* transition: background-color 0.3s ease; */
+    transition: opacity 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -225,14 +227,18 @@ a {
     }
 }
 
-.header__arrow {
+.header__btn-pink:hover, .header__btn-green:hover {
+    opacity: 0.7;
+}
+
+.header__btn-arrow {
     width: 0.6rem;
     height: 1rem;
     margin-left: 0.8rem;
 }
 
 @media (min-width: 768px) {
-    .header__arrow {
+    .header__btn-arrow {
         width: 1.1rem;
         height: 1.8rem;
     }
@@ -276,7 +282,7 @@ a {
 
 @media (min-width: 768px) {
     .hero__container {
-        max-width: 103rem;
+        max-width: $max-width-pc;
         margin: 0 auto;
         padding: 0 3rem;
     }
@@ -467,14 +473,11 @@ a {
 /* 3回プレゼントここから ----------------------------------------- */
 .gift {
     background-color: #fffedd;
-}
-
-.under-margin-gift {
     margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-    .under-margin-gift {
+    .gift {
         margin-bottom: 6.1rem;
     }
 
@@ -611,7 +614,7 @@ a {
 
 @media (min-width: 768px) {
     .cv-section__container {
-        max-width: 103rem;
+        max-width: $max-width-pc;
         margin: 0 auto;
     }
 }
@@ -695,3 +698,72 @@ a {
     
 }
 
+/* 無料体験内容ここから ----------------------------------------- */
+.info {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .info {
+        margin-top: 4.6rem;
+    }
+    
+}
+
+.info__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 $pad-sp;
+}
+
+@media (min-width: 768px) {
+    .info__container {
+        max-width: $max-width-pc;
+        padding: 0 23rem;
+    }
+    
+}
+
+.info__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #50bfff;
+    border-top: 1px solid #50bfff;
+    border-bottom: 1px solid #50bfff;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 1.1rem;
+    margin-bottom: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .info__title {
+        font-size: 2.8rem;
+        padding: 1.8rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.info__text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .info__text {
+        font-size: 2.286rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+.info__text--small {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .info__text--small {
+        font-size: 1.796rem;
+    }
+}
+
+/* ３つのポイントここから ----------------------------------------- */
