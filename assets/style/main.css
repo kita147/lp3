@@ -89,14 +89,20 @@ a {
   font-weight: 700;
   color: #fa7da3;
   letter-spacing: 0.04em;
-  padding-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .title-kira {
+    font-size: 4.2rem;
+    letter-spacing: 0;
+    padding-bottom: 0.7rem;
+  }
+}
 .title-kira::before,
 .title-kira::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 1.8rem;
   width: 3.8rem;
   height: 4.6rem;
   background-image: url(/assets/image/kira.svg);
@@ -105,16 +111,34 @@ a {
   transform: translateY(-50%);
 }
 
+@media (min-width: 768px) {
+  .title-kira::before,
+  .title-kira::after {
+    top: 2.2rem;
+    width: 5rem;
+    height: 6.1rem;
+  }
+}
 .title-kira::before {
   left: -3.8rem;
   transform: translateY(-50%) scaleX(-1);
   /* 左右反転 */
 }
 
+@media (min-width: 768px) {
+  .title-kira::before {
+    left: -5.8rem;
+  }
+}
 .title-kira::after {
   right: -3.8rem;
 }
 
+@media (min-width: 768px) {
+  .title-kira::after {
+    right: -5.8rem;
+  }
+}
 /* ヘッダーここから -----------------------------------------*/
 .header {
   background-color: #fff;
@@ -684,7 +708,7 @@ a {
   .info__title {
     font-size: 2.8rem;
     padding: 1.8rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.7rem;
   }
 }
 .info__text {
@@ -696,7 +720,7 @@ a {
 @media (min-width: 768px) {
   .info__text {
     font-size: 2.286rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.5rem;
   }
 }
 .info__text--small {
@@ -710,17 +734,28 @@ a {
 }
 /* ３つのポイントここから ----------------------------------------- */
 .point {
-  margin-top: 4.1rem;
+  margin: 3.7rem 0 3.2rem;
   background-color: #fdf0f5;
 }
 
+@media (min-width: 768px) {
+  .point {
+    margin: 5.5rem 0 6rem;
+  }
+}
 .point__container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 3.2rem 2rem 3rem;
+  padding: 3.4rem 2rem 3rem;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .point__container {
+    max-width: 103rem;
+    padding: 5rem 12.5rem 6rem;
+  }
+}
 .point__sub-title {
   display: flex;
   justify-content: center;
@@ -728,75 +763,205 @@ a {
   font-size: 1.8rem;
   font-weight: 500;
   color: #4d2b1b;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
 }
 
+@media (min-width: 768px) {
+  .point__sub-title {
+    font-size: 1.807rem;
+    margin-bottom: 2rem;
+  }
+}
 .point__text-logo {
   width: 19.7rem;
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
+@media (min-width: 768px) {
+  .point__text-logo {
+    width: 26.3rem;
+    margin-right: 0.3rem;
+  }
+}
 .point__box {
-  width: 100%;
+  margin-top: 2.9rem;
 }
 
+@media (min-width: 768px) {
+  .point__box {
+    margin-top: 5rem;
+  }
+}
 .point__box-title {
   font-size: 1.8rem;
   background-color: #fa7da3;
   color: #fff;
-  padding: 0.8rem 0;
+  padding: 0.8rem;
   border: solid 1px #fa7da3;
   border-radius: 1rem 1rem 0 0;
 }
 
+@media (min-width: 768px) {
+  .point__box-title {
+    font-size: 2.8rem;
+    padding: 1.5rem;
+  }
+}
 .point__box-contents {
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 1.6rem 2rem 1.6rem;
   border: solid 1px #fa7da3;
   border-radius: 0 0 1rem 1rem;
 }
 
+@media (min-width: 768px) {
+  .point__box-contents {
+    padding: 2.5rem 4rem 2.8rem;
+  }
+}
 .point__box-text {
-  margin-bottom: 1rem;
   text-align: left;
 }
 
+@media (min-width: 768px) {
+  .point__box-text {
+    font-size: 2.1rem;
+    line-height: 1.6;
+  }
+}
 .common-layout-lr {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.point__shop-box {
+@media (min-width: 768px) {
+  .common-layout-lr {
+    width: 50.5rem;
+  }
+}
+.common-layout-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.point__shop-img {
+.point__shop-frame {
   width: 14.3rem;
   height: 8.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #fa7da3;
-  position: relative; /* 位置関係を整える */
+  margin-top: 1rem;
 }
 
-.point__shop-text {
+@media (min-width: 768px) {
+  .point__shop-frame {
+    width: 23.2rem;
+    height: 13.7rem;
+    margin-top: 2.5rem;
+  }
+}
+.point__shop-rule {
+  font-size: 1.4rem;
   margin-top: 0.5rem;
-  font-size: 1.6rem;
-  text-align: center;
-  color: #333;
 }
 
-.bg-col-light-pink {
+@media (min-width: 768px) {
+  .point__shop-rule {
+    font-size: 2.1rem;
+    margin-top: 0.9rem;
+  }
+}
+.point__shop-example {
   font-size: 1.8rem;
+  color: #433e3f;
   background-color: #fdf0f5;
-  border: 1px solid #333;
+  border: 1px solid #666;
 }
 
+@media (min-width: 768px) {
+  .point__shop-example {
+    font-size: 2.9rem;
+    background-color: #fff;
+    border: 2px solid #666;
+  }
+}
 .point__shop-logo {
   width: 7.1rem;
   height: 3.9rem;
+}
+
+@media (min-width: 768px) {
+  .point__shop-logo {
+    width: 11.6rem;
+    height: 6.4rem;
+  }
+}
+.point__plan-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #4d2c1c;
+  padding: 2rem 0 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .point__plan-title {
+    font-size: 2.4rem;
+    padding: 2rem 0 2rem;
+  }
+}
+.point__all-body-image {
+  width: 31.2rem;
+  margin-bottom: 2.3rem;
+}
+
+@media (min-width: 768px) {
+  .point__all-body-image {
+    width: 58.3rem;
+    padding-left: 2.4rem;
+    margin-bottom: 3.4rem;
+  }
+}
+.common-layout-glid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* SP（スマホ）では3列 */
+  gap: 1.6rem 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .common-layout-glid {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0.5rem 2rem;
+  }
+}
+.point__parts-image {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .point__parts-image {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.point__parts-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fa7da3;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .point__parts-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fa7da3;
+    letter-spacing: 0.02em;
+  }
 }/*# sourceMappingURL=main.css.map */
