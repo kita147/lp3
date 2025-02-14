@@ -35,15 +35,15 @@ html {
 
 body {
   font-family: "Noto Sans JP", serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.75;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background-color: #fff;
   color: #333;
 }
 
-p,
 span,
 th,
 h1,
@@ -88,6 +88,8 @@ a {
   font-size: 3.2rem;
   font-weight: 700;
   color: #fa7da3;
+  letter-spacing: 0.04em;
+  padding-bottom: 2rem;
 }
 
 .title-kira::before,
@@ -95,25 +97,22 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  width: 5rem;
-  height: 6.2rem;
-  background-image: url("sparkle.svg");
-  /* SVGのパス */
+  width: 3.8rem;
+  height: 4.6rem;
+  background-image: url(/assets/image/kira.svg);
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateY(-50%);
 }
 
 .title-kira::before {
-  left: -6rem;
-  /* 適宜調整 */
+  left: -3.8rem;
   transform: translateY(-50%) scaleX(-1);
   /* 左右反転 */
 }
 
 .title-kira::after {
-  right: -6rem;
-  /* 適宜調整 */
+  right: -3.8rem;
 }
 
 /* ヘッダーここから -----------------------------------------*/
@@ -443,6 +442,7 @@ a {
 .gift {
   background-color: #fffedd;
   margin-bottom: 2rem;
+  line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -551,6 +551,7 @@ a {
 }
 .gift__text-small {
   font-size: 1rem;
+  letter-spacing: 0;
   margin-top: 1rem;
   text-align: center;
 }
@@ -676,7 +677,7 @@ a {
   text-align: center;
   letter-spacing: 0.1em;
   padding: 1.1rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.1rem;
 }
 
 @media (min-width: 768px) {
@@ -688,7 +689,8 @@ a {
 }
 .info__text {
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  letter-spacing: 0;
+  margin-bottom: 0.3rem;
 }
 
 @media (min-width: 768px) {
@@ -706,4 +708,95 @@ a {
     font-size: 1.796rem;
   }
 }
-/* ３つのポイントここから ----------------------------------------- *//*# sourceMappingURL=main.css.map */
+/* ３つのポイントここから ----------------------------------------- */
+.point {
+  margin-top: 4.1rem;
+  background-color: #fdf0f5;
+}
+
+.point__container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem 2rem 3rem;
+  text-align: center;
+}
+
+.point__sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #4d2b1b;
+  margin-bottom: 0.9rem;
+}
+
+.point__text-logo {
+  width: 19.7rem;
+  margin-right: 0.5rem;
+}
+
+.point__box {
+  width: 100%;
+}
+
+.point__box-title {
+  font-size: 1.8rem;
+  background-color: #fa7da3;
+  color: #fff;
+  padding: 0.8rem 0;
+  border: solid 1px #fa7da3;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.point__box-contents {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: solid 1px #fa7da3;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.point__box-text {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.common-layout-lr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.point__shop-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.point__shop-img {
+  width: 14.3rem;
+  height: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fa7da3;
+  position: relative; /* 位置関係を整える */
+}
+
+.point__shop-text {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333;
+}
+
+.bg-col-light-pink {
+  font-size: 1.8rem;
+  background-color: #fdf0f5;
+  border: 1px solid #333;
+}
+
+.point__shop-logo {
+  width: 7.1rem;
+  height: 3.9rem;
+}/*# sourceMappingURL=main.css.map */
