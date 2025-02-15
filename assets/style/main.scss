@@ -31,6 +31,7 @@ html {
 
 /* 変数 -----------------------------------------*/
 $main-pink: #fa7da3;
+$light-pink: #fdf0f5;
 $light-green: #49c43d;
 $pad-sp: 2rem;
 $max-width-pc: 103rem;
@@ -918,19 +919,6 @@ a {
     }
 }
 
-/*.point__box-contents {
-    background-color: #fff;
-    padding: 1.6rem 2rem 1.6rem;
-    border: solid 1px $main-pink;
-    border-radius: 0 0 1rem 1rem;
-}
-
-@media (min-width: 768px) {
-    .point__box-contents {
-        padding: 2.5rem 4rem 3.5rem;
-    }
-}*/
-
 .point__box-text{
     text-align: left;
     letter-spacing: 0;
@@ -1089,3 +1077,115 @@ a {
         letter-spacing: 0.02em;
     }
 }
+
+/* ２つのコースここから ----------------------------------------- */
+.course {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .course {
+        margin-top: 0;
+    } 
+}
+
+.course__container {
+    max-width: 100%;
+    margin: 0  auto;
+    padding: 4.8rem $pad-sp 2.2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .course__container {
+        max-width: $max-width-pc;
+        margin: 0  auto;
+        padding: 6rem 15rem 6.2rem;
+    }
+}
+
+.course__sub-title {
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 1.8rem;
+    padding-left: 0.4rem;
+}
+
+@media (min-width: 768px) {
+    .course__sub-title {
+        font-size: 2.4rem;
+        margin-bottom: 2.3rem;
+    }
+}
+
+.course__box-all {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+    margin-top: 2.7rem;
+}
+
+@media (min-width: 768px) {
+    .course__box-all {
+        flex-direction: row;
+        gap: 2.9rem;
+        margin-top: 4rem;
+    }
+}
+
+.course__box-title {
+    font-size: 1.8rem;
+    background-color: $light-pink;
+    color: $main-pink;
+    padding: 0.9rem;
+    border: solid 1px $main-pink;
+    border-bottom: none;
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+    .course__box-title {
+        font-size: 2.8rem;
+        padding: 0.9rem;
+    }
+}
+
+.course__box-contents {
+    background-color: #fff;
+    padding: 1.4rem 2rem 2.1rem;
+    border: solid 1px $main-pink;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .course__box-contents {
+        padding: 0.9rem 1.9rem 1.7rem;
+    }
+}
+
+.course__box-text{
+    text-align: left;
+    font-feature-settings: "palt";
+}
+
+@media (min-width: 768px) {
+    .course__box-text{
+        font-size: 1.8rem;
+    }
+}
+
+.course__box-image {
+    width: 100%;
+    margin-top: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .course__box-image {
+        width: 31.1rem;
+        margin-top: 1.4rem;
+    }
+}
+
