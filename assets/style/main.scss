@@ -1184,35 +1184,50 @@ a {
 
 /* お客様の声ここから ----------------------------------------- */
 .voice {
+    background-color: $light-pink;
     margin-bottom: 2.8rem;
 }
 
 @media (min-width: 768px) {
-
+    .voice {
+        margin-bottom: 5.2rem;
+    }
 }
 
 .voice__container {
     max-width: 100%;
-    background-color: $light-pink;
     margin: 0 auto;
-    padding: 2.5rem $pad-sp 5.3rem;
+    padding: 2.5rem 0 5.3rem;
     text-align: center;
 }
 
 @media (min-width: 768px) {
-    
+    .voice__container {
+        max-width: $max-width-pc;
+        margin: 0 auto;
+        padding: 3.7rem 3.5rem 8.5rem;
+    }
 }
 
-.voice__under-margin {
+.voice__title-kira-under-margin {
     margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-    
+    .voice__title-kira-under-margin {
+        margin-bottom: 2.8rem;
+    }
 }
 
 .voice__box {
     width: 31rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .voice__box {
+        width: 31rem;
+    }
 }
 
 .voice__box-title{
@@ -1225,7 +1240,9 @@ a {
 }
 
 @media (min-width: 768px) {
-    
+    .voice__box-title{
+        padding: 0.8rem;
+    }
 }
 
 .voice__box-contents {
@@ -1238,7 +1255,9 @@ a {
 }
 
 @media (min-width: 768px) {
-    
+    .voice__box-contents {
+        padding: 1.5rem 2rem 1.1rem;
+    }
 }
 
 .voice__guest-photo {
@@ -1248,7 +1267,11 @@ a {
 }
 
 @media (min-width: 768px) {
-    
+    .voice__guest-photo {
+        width: 8.6rem;
+        height: 11.4rem;
+        object-fit: contain;
+    }
 }
 
 .voice__text-group {
@@ -1256,7 +1279,9 @@ a {
 }
 
 @media (min-width: 768px) {
-    
+    .voice__text-group {
+        width: 16.8rem;
+    }
 }
 
 .voice__guest-name {
@@ -1268,7 +1293,13 @@ a {
 }
 
 @media (min-width: 768px) {
-    
+    .voice__guest-name {
+        font-size: 1.6rem;
+        color: $main-pink;
+        margin-bottom: 0.6rem;
+        text-align: justify;
+        letter-spacing: 0;
+    }
 }
 
 .voice__guest-comment {
@@ -1276,24 +1307,16 @@ a {
     letter-spacing: 0;
 }
 
-@media (min-width: 768px) {
-    
-}
-
+/* スライダーの設定ここから ---------------------- */
 .swiper__container {
     position: relative;
-    margin: 0 auto;
-    width: 31rem;
-}
-
-@media (min-width: 768px) {
-    
 }
 
 .swiper {
     overflow: visible;
 }
 
+/* ドットの大きさを変更 */
 .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
@@ -1304,17 +1327,18 @@ a {
     margin: 0 0.75rem !important;
 }
 
-/* ドットの間隔を変更 */
+/* ドットの非アクティブ色を変更 */
 .swiper-pagination-bullet {
     background-color: #ffd2d2;
     opacity: 1;
 }
 
+/* ドットのアクティブ色を変更 */
 .swiper-pagination-bullet-active {
     background-color: $main-pink;
 }
 
-/* ページネーションの位置 */
+/* ページネーション（ドット）のY位置 */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -4rem;
 }
