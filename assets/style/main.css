@@ -141,15 +141,15 @@ a {
 /* ヘッダーここから -----------------------------------------*/
 .header {
   background-color: #fff;
-  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-@media (min-width: 768px) {
-  .header {
-    height: 9.2rem;
-  }
-}
 .header__container {
+  height: 6rem;
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 1rem 1rem 1.2rem;
@@ -160,6 +160,7 @@ a {
 
 @media (min-width: 768px) {
   .header__container {
+    height: 9.2rem;
     max-width: 103rem;
     padding: 1.8rem 0.3rem;
   }
@@ -260,6 +261,7 @@ a {
 }
 /* ヒーロービューここから ----------------------------------------- */
 .hero {
+  margin-top: 6rem;
   width: 100%;
   height: 31.4rem;
   background-image: url(/assets/image/main_visual_sp.jpg);
@@ -274,6 +276,7 @@ a {
 
 @media (min-width: 768px) {
   .hero {
+    margin-top: 9.2rem;
     height: 61.2rem;
     background-image: url(/assets/image/main_visual_pc.jpg);
   }
