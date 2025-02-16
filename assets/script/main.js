@@ -6,7 +6,11 @@ const swiper = new Swiper(".swiper", {
 
     // スライド数の設定
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 16,
+
+    //無限ループさせる
+    loop: true,
+    loopAdditionalSlides: 1,
 
     // ブレークポイントの設定とPC版のスライド数の設
     breakpoints: {
@@ -14,12 +18,6 @@ const swiper = new Swiper(".swiper", {
         slidesPerView: 3,
         spaceBetween: 40,
         },
-    },
-
-    // ナビゲーションボタンの設定
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
     },
 
   // ページネーションの設定

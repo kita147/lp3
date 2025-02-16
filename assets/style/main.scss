@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    letter-spacing: 0.04em;
+    /*letter-spacing: 0.04em;*/
     background-color: #fff;
     color: #333;
 }
@@ -158,11 +158,6 @@ a {
 .header {
     background-color: #fff;
     height: 6rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
 }
 
 @media (min-width: 768px) {
@@ -277,7 +272,6 @@ a {
 
 /* ヒーロービューここから ----------------------------------------- */
 .hero {
-    margin-top: 6rem;
     width: 100%;
     height: 31.4rem;
     background-image: url(/assets/image/main_visual_sp.jpg);
@@ -291,7 +285,6 @@ a {
 
 @media (min-width: 768px) {
     .hero {
-        margin-top: 9.2rem;
         height: 61.2rem;
         background-image: url(/assets/image/main_visual_pc.jpg);
     }
@@ -1189,3 +1182,139 @@ a {
     }
 }
 
+/* お客様の声ここから ----------------------------------------- */
+.voice {
+    margin-bottom: 2.8rem;
+}
+
+@media (min-width: 768px) {
+
+}
+
+.voice__container {
+    max-width: 100%;
+    background-color: $light-pink;
+    margin: 0 auto;
+    padding: 2.5rem $pad-sp 5.3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__under-margin {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__box {
+    width: 31rem;
+}
+
+.voice__box-title{
+    font-size: 1.8rem;
+    background-color: $main-pink;
+    color: #fff;
+    padding: 0.8rem;
+    border: solid 1px $main-pink;
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__box-contents {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.5rem 2rem 1.1rem;
+    border: solid 1px $main-pink;
+    border-radius: 0 0 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__guest-photo {
+    width: 8.6rem;
+    height: 11.4rem;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__text-group {
+    width: 16.8rem;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__guest-name {
+    font-size: 1.6rem;
+    color: $main-pink;
+    margin-bottom: 0.6rem;
+    text-align: justify;
+    letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.voice__guest-comment {
+    text-align: left;
+    letter-spacing: 0;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.swiper__container {
+    position: relative;
+    margin: 0 auto;
+    width: 31rem;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+.swiper {
+    overflow: visible;
+}
+
+.swiper-pagination-bullet {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* ドットの間隔を変更 */
+.swiper-pagination-bullet {
+    margin: 0 0.75rem !important;
+}
+
+/* ドットの間隔を変更 */
+.swiper-pagination-bullet {
+    background-color: #ffd2d2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $main-pink;
+}
+
+/* ページネーションの位置 */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -4rem;
+}
