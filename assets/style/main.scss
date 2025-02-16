@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* フォントの導入 -----------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap');
 
 /* コンテンツ幅以下可変レイアウト -----------------------------------------*/
 html {
@@ -34,8 +34,7 @@ $main-pink: #fa7da3;
 $light-pink: #fdf0f5;
 $light-green: #49c43d;
 $pad-sp: 2rem;
-$max-width-pc: 103rem;
-
+$contents-width-pc: 103rem;
 
 /* 全体的な設定 -----------------------------------------*/
 * {
@@ -50,7 +49,6 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    /*letter-spacing: 0.04em;*/
     background-color: #fff;
     color: #333;
 }
@@ -177,7 +175,7 @@ a {
 
 @media (min-width: 768px) {
     .header__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         padding: 1.8rem 0.3rem;
     }
 }
@@ -296,7 +294,7 @@ a {
 
 @media (min-width: 768px) {
     .hero__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         margin: 0 auto;
         padding: 0 3rem;
     }
@@ -636,7 +634,7 @@ a {
 
 @media (min-width: 768px) {
     .cv-section__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         margin: 0 auto;
     }
 }
@@ -740,7 +738,7 @@ a {
 
 @media (min-width: 768px) {
     .info__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         padding: 0 23rem;
     }
     
@@ -810,7 +808,7 @@ a {
 
 @media (min-width: 768px) {
     .point__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         padding: 5rem 12.5rem 6rem;
     }
     
@@ -1091,7 +1089,7 @@ a {
 
 @media (min-width: 768px) {
     .course__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         margin: 0  auto;
         padding: 6rem 15rem 6.2rem;
     }
@@ -1203,7 +1201,7 @@ a {
 
 @media (min-width: 768px) {
     .voice__container {
-        max-width: $max-width-pc;
+        max-width: $contents-width-pc;
         margin: 0 auto;
         padding: 3.7rem 3.5rem 8.5rem;
     }
