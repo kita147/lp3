@@ -1224,12 +1224,6 @@ a {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    .voice__box {
-        width: 31rem;
-    }
-}
-
 .voice__box-title{
     font-size: 1.8rem;
     background-color: $main-pink;
@@ -1237,12 +1231,6 @@ a {
     padding: 0.8rem;
     border: solid 1px $main-pink;
     border-radius: 1rem 1rem 0 0;
-}
-
-@media (min-width: 768px) {
-    .voice__box-title{
-        padding: 0.8rem;
-    }
 }
 
 .voice__box-contents {
@@ -1254,34 +1242,14 @@ a {
     border-radius: 0 0 1rem 1rem;
 }
 
-@media (min-width: 768px) {
-    .voice__box-contents {
-        padding: 1.5rem 2rem 1.1rem;
-    }
-}
-
 .voice__guest-photo {
     width: 8.6rem;
     height: 11.4rem;
     object-fit: contain;
 }
 
-@media (min-width: 768px) {
-    .voice__guest-photo {
-        width: 8.6rem;
-        height: 11.4rem;
-        object-fit: contain;
-    }
-}
-
 .voice__text-group {
     width: 16.8rem;
-}
-
-@media (min-width: 768px) {
-    .voice__text-group {
-        width: 16.8rem;
-    }
 }
 
 .voice__guest-name {
@@ -1290,16 +1258,6 @@ a {
     margin-bottom: 0.6rem;
     text-align: justify;
     letter-spacing: 0;
-}
-
-@media (min-width: 768px) {
-    .voice__guest-name {
-        font-size: 1.6rem;
-        color: $main-pink;
-        margin-bottom: 0.6rem;
-        text-align: justify;
-        letter-spacing: 0;
-    }
 }
 
 .voice__guest-comment {
@@ -1341,4 +1299,19 @@ a {
 /* ページネーション（ドット）のY位置 */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -4rem;
+}
+
+/* フッターここから ----------------------------------------- */
+.footer {
+    background-color: $main-pink;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 7.3rem;
 }
