@@ -1042,6 +1042,63 @@ a {
     margin-bottom: 2.3rem;
   }
 }
+.title-kira2 {
+  position: relative;
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fa7da3;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .title-kira2 {
+    font-size: 4.2rem;
+    letter-spacing: 0;
+    padding-bottom: 0.7rem;
+  }
+}
+.title-kira2::before,
+.title-kira2::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  width: 3.8rem;
+  height: 4.6rem;
+  background-image: url(/assets/image/kira.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .title-kira2::before,
+  .title-kira2::after {
+    top: 2rem;
+    width: 5rem;
+    height: 6.1rem;
+  }
+}
+.title-kira2::before {
+  left: -4.3rem;
+  transform: translateY(-50%) scaleX(-1);
+  /* 左右反転 */
+}
+
+@media (min-width: 768px) {
+  .title-kira2::before {
+    left: -6.3rem;
+  }
+}
+.title-kira2::after {
+  right: -4.3rem;
+}
+
+@media (min-width: 768px) {
+  .title-kira2::after {
+    right: -6.5rem;
+  }
+}
 .course__box-all {
   display: flex;
   flex-direction: column;
@@ -1131,12 +1188,69 @@ a {
     padding: 3.7rem 3.5rem 8.5rem;
   }
 }
-.voice__title-kira-under-margin {
+.title-kira3 {
+  position: relative;
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fa7da3;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .title-kira3 {
+    font-size: 4.2rem;
+    letter-spacing: 0;
+    padding-bottom: 0.7rem;
+  }
+}
+.title-kira3::before,
+.title-kira3::after {
+  content: "";
+  position: absolute;
+  top: 2.5rem;
+  width: 3.8rem;
+  height: 4.6rem;
+  background-image: url(/assets/image/kira.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .title-kira3::before,
+  .title-kira3::after {
+    top: 3.2rem;
+    width: 5rem;
+    height: 6.1rem;
+  }
+}
+.title-kira3::before {
+  left: -5.2rem;
+  transform: translateY(-50%) scaleX(-1);
+  /* 左右反転 */
+}
+
+@media (min-width: 768px) {
+  .title-kira3::before {
+    left: -7.4rem;
+  }
+}
+.title-kira3::after {
+  right: -5.2rem;
+}
+
+@media (min-width: 768px) {
+  .title-kira3::after {
+    right: -7.5rem;
+  }
+}
+.voice__title-under-margin {
   margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
-  .voice__title-kira-under-margin {
+  .voice__title-under-margin {
     margin-bottom: 2.8rem;
   }
 }
