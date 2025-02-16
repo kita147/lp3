@@ -269,6 +269,7 @@ a {
   color: #fff;
   line-height: 1;
   letter-spacing: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1165,6 +1166,7 @@ a {
 .voice {
   background-color: #fdf0f5;
   margin-bottom: 2.8rem;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1252,11 +1254,6 @@ a {
     margin-bottom: 3.8rem;
   }
 }
-.voice__box {
-  width: 31rem;
-  margin: 0 auto;
-}
-
 .voice__box-title {
   font-size: 1.8rem;
   background-color: #fa7da3;
@@ -1301,9 +1298,16 @@ a {
 
 /* スライダーの設定ここから ---------------------- */
 .swiper__container {
+  width: 31rem;
+  margin-inline: auto;
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .swiper__container {
+    width: 96rem;
+  }
+}
 .swiper {
   overflow: visible;
 }

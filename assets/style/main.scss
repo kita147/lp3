@@ -271,6 +271,7 @@ a {
     color: #fff;
     line-height: 1;
     letter-spacing: 0;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1237,6 +1238,7 @@ a {
 .voice {
     background-color: $light-pink;
     margin-bottom: 2.8rem;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1332,11 +1334,6 @@ a {
     }
 }
 
-.voice__box {
-    width: 31rem;
-    margin: 0 auto;
-}
-
 .voice__box-title{
     font-size: 1.8rem;
     background-color: $main-pink;
@@ -1380,11 +1377,19 @@ a {
 
 /* スライダーの設定ここから ---------------------- */
 .swiper__container {
+    width: 31rem; //スライダーの横幅
+    margin-inline: auto; //スライダーを中央揃え
     position: relative;
 }
 
+@media (min-width: 768px) {
+    .swiper__container {
+        width: 96rem; //スライダーの横幅
+    }
+} 
+
 .swiper {
-    overflow: visible;
+    overflow: visible; //左右のスライダーも表示
 }
 
 /* ドットの大きさを変更 */

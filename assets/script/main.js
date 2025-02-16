@@ -3,22 +3,22 @@
 ////////// swiperの設定 //////////
 const swiper = new Swiper(".swiper", {
 
-    // 無限ループさせる
+    // 無限ループの設定
     loop: true,
     loopAdditionalSlides: 1,
     
-    //始めアクティブスライドを2番目のスライドにする
+    //開始スライドの選定
     initialSlide: 1,
 
     // スライド数の設定
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 16,
 
     // ブレークポイントの設定とPC版のスライド数の設定
     breakpoints: {
         768: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 16,
         },
     },
 
