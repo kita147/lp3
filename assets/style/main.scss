@@ -457,7 +457,6 @@ a {
     flex-direction: column;
     row-gap: 1.3rem;
     align-items: flex-end;
-    /* 右揃えにする */
 }
 
 @media (min-width: 768px) {
@@ -569,7 +568,7 @@ a {
     color: #fff;
     padding: 0.3rem 0 0.5rem;
     border: solid 1px $main-pink;
-    border-radius: 1rem 1rem 0 0; // 左上・右上は3rem、左下・右下は0
+    border-radius: 1rem 1rem 0 0;
 }
 
 @media (min-width: 768px) {
@@ -585,7 +584,7 @@ a {
     background-color: #fff;
     padding: 0.7rem 0 1.1rem;
     border: solid 1px $main-pink;
-    border-radius: 0 0 1rem 1rem; // 左上・右上は0、左下・右下は3rem
+    border-radius: 0 0 1rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -700,7 +699,6 @@ a {
     width: 1.2rem;
     height: 1.9rem;
     margin-left: 2.6rem;
-    /* テキストとの間隔 */
 }
 
 @media (min-width: 768px) {
@@ -1052,7 +1050,6 @@ a {
     color: $main-pink;
     letter-spacing: 0.02em;
 }
-
 
 @media (min-width: 768px) {
     .point__parts-name {

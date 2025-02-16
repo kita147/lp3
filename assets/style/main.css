@@ -442,7 +442,6 @@ a {
   flex-direction: column;
   row-gap: 1.3rem;
   align-items: flex-end;
-  /* 右揃えにする */
 }
 
 @media (min-width: 768px) {
@@ -663,7 +662,6 @@ a {
   width: 1.2rem;
   height: 1.9rem;
   margin-left: 2.6rem;
-  /* テキストとの間隔 */
 }
 
 @media (min-width: 768px) {
