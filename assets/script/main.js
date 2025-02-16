@@ -17,12 +17,12 @@ const swiper = new Swiper(".swiper", {
     // ブレークポイントの設定とPC版のスライド数の設
     breakpoints: {
         768: {
-        slidesPerView: 3,
-        spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 10,
         },
     },
 
-  // ページネーションの設定
+    // ページネーションの設定
     pagination: {
         el: ".swiper-pagination",
         type: "bullets",
