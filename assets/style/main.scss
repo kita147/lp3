@@ -279,13 +279,8 @@ a {
 /* ヒーロービューここから ----------------------------------------- */
 .hero {
     margin-top: 6rem;
-    width: 100%;
-    height: 31.4rem;
-    background-image: url(/assets/image/main_visual_sp.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #fff;
+    background-color: $main-pink;
     line-height: 1;
     letter-spacing: 0;
     overflow: hidden;
@@ -294,9 +289,23 @@ a {
 @media (min-width: 768px) {
     .hero {
         margin-top: 9.2rem;
+    }
+}
+
+.hero__bg {
+    width: 100%;
+    height: 31.4rem;
+    background-image: url(/assets/image/main_visual_sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .hero__bg {
         height: 61.2rem;
         background-image: url(/assets/image/main_visual_pc.jpg);
-        background-position: bottom;
+        background-size: 144rem;
     }
 }
 
