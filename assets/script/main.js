@@ -4,8 +4,7 @@
 const swiper = new Swiper(".swiper", {
 
     // 無限ループの設定
-    loop: true,
-    loopAdditionalSlides: 1,
+    loop: false,
     
     //開始スライドの選定
     initialSlide: 1,
