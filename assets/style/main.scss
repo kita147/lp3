@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* フォントの導入 -----------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap");
 
 /* コンテンツ幅以下可変レイアウト -----------------------------------------*/
 html {
@@ -10,7 +10,7 @@ html {
     /* 390はSPデザインカンプの幅 */
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     html {
         font-size: calc(10 * 100vw / 1030);
         /* 1030はPCカンプのコンテンツ幅 */
@@ -150,7 +150,6 @@ a {
     .title-kira::after {
         right: -5.8rem;
     }
-    
 }
 
 /* ヘッダーここから -----------------------------------------*/
@@ -370,7 +369,7 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 5px 0px rgba(231, 116, 151, 1);
     padding: 2.4rem 2.4rem;
 }
 
@@ -521,7 +520,6 @@ a {
     .gift {
         margin-bottom: 5.2rem;
     }
-
 }
 
 .gift__container {
@@ -532,7 +530,6 @@ a {
     .gift__container {
         padding: 4.7rem 0 2.9rem;
     }
-
 }
 
 .gift__text-now {
@@ -675,7 +672,6 @@ a {
         font-size: 3.4rem;
         margin-bottom: 1.2rem;
     }
-    
 }
 
 .btn-cv {
@@ -736,7 +732,6 @@ a {
         height: 3.2rem;
         margin-left: 4.7rem;
     }
-    
 }
 
 /* 無料体験内容ここから ----------------------------------------- */
@@ -748,7 +743,6 @@ a {
     .info {
         margin-top: 4.6rem;
     }
-    
 }
 
 .info__container {
@@ -762,7 +756,6 @@ a {
         max-width: $contents-width-pc;
         padding: 0 23rem;
     }
-    
 }
 
 .info__title {
@@ -833,7 +826,6 @@ a {
         max-width: $contents-width-pc;
         padding: 5rem 12.5rem 6rem;
     }
-    
 }
 
 .point__sub-title {
@@ -932,13 +924,13 @@ a {
     }
 }
 
-.point__box-text{
+.point__box-text {
     text-align: left;
     letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
-    .point__box-text{
+    .point__box-text {
         font-size: 2.1rem;
         line-height: 1.6;
     }
@@ -1099,12 +1091,12 @@ a {
 @media (min-width: 768px) {
     .course {
         margin-top: 0;
-    } 
+    }
 }
 
 .course__container {
     max-width: 100%;
-    margin: 0  auto;
+    margin: 0 auto;
     padding: 4.8rem $pad-sp 2.2rem;
     text-align: center;
 }
@@ -1112,7 +1104,7 @@ a {
 @media (min-width: 768px) {
     .course__container {
         max-width: $contents-width-pc;
-        margin: 0  auto;
+        margin: 0 auto;
         padding: 6rem 15rem 6.2rem;
     }
 }
@@ -1192,7 +1184,6 @@ a {
     .title-kira2::after {
         right: -6.5rem;
     }
-    
 }
 
 .course__box-all {
@@ -1241,12 +1232,12 @@ a {
     }
 }
 
-.course__box-text{
+.course__box-text {
     text-align: left;
 }
 
 @media (min-width: 768px) {
-    .course__box-text{
+    .course__box-text {
         font-size: 1.7rem;
         line-height: 1.6;
     }
@@ -1351,7 +1342,6 @@ a {
     .title-kira3::after {
         right: -7.5rem;
     }
-    
 }
 
 .voice__title-under-margin {
@@ -1419,7 +1409,7 @@ a {
     .swiper__container {
         width: 96rem; //スライダーの横幅
     }
-} 
+}
 
 .swiper {
     overflow: visible; //左右のスライダーも表示
@@ -1485,6 +1475,5 @@ a {
     .footer__logo {
         width: 14.5rem;
     }
-    
 }
 /* フッターここまで ----------------------------------------- */

@@ -366,7 +366,7 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 0px rgb(231, 116, 151);
   padding: 2.4rem 2.4rem;
 }
 
