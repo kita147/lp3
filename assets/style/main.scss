@@ -1421,14 +1421,7 @@ a {
 .voice__guest-photo {
     width: 8.6rem;
     height: 11.4rem;
-    object-fit: contain;
-}
-
-.voice__guest-photo--layout-03 {
-    width: 8.7rem;
-    height: 11.4rem;
-    margin-left: 0.2rem;
-    padding-bottom: 0.7rem;
+    object-fit: cover;
 }
 
 .voice__text-group {
