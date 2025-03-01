@@ -9,16 +9,16 @@ const swiper = new Swiper(".swiper", {
     //開始スライドの選定(2枚目のスライドからスタート)
     initialSlide: 1,
 
-    // スライド数の設定
+    // SP版スライド数の設定
     slidesPerView: 1,
 
     // スライド間の余白の設定
     spaceBetween: 15,
 
-    // ブレークポイントの設定とPC版のスライド数の設定
+    // ブレークポイントの設定（PC版の設定）
     breakpoints: {
         768: {
-            slidesPerView: 3,
+            slidesPerView: 3, // PC版のスライド数
         },
     },
 
