@@ -511,6 +511,8 @@ a {
   font-size: 2.1rem;
   color: #fa7da3;
   text-align: center;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -526,7 +528,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 0.7rem;
+  margin: 0 0.5rem;
 }
 .gift__text-now::after {
   transform: scaleX(-1);
@@ -537,12 +539,18 @@ a {
     font-size: 3.4rem;
     margin-bottom: 1.7rem;
     align-items: flex-start;
+    margin-left: 0.3rem;
   }
   .gift__text-now::before, .gift__text-now::after {
     width: 2.6rem;
     height: 4.1rem;
     background-image: url("/assets/image/slash_pc.svg");
-    margin: 0 1.1rem;
+    margin: 0 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .gift__text-exmark {
+    margin-left: 0.8rem;
   }
 }
 .gift__box {
@@ -1177,12 +1185,14 @@ a {
 }
 .course__box-text {
   text-align: left;
+  line-break: anywhere;
 }
 
 @media (min-width: 768px) {
   .course__box-text {
     font-size: 1.7rem;
     line-height: 1.6;
+    letter-spacing: 0.07em;
   }
 }
 .course__box-image {
