@@ -1354,7 +1354,7 @@ a {
 
 /* スライダーの設定ここから ---------------------- */
 .swiper__container {
-  width: 31rem;
+  width: 30.9rem;
   margin-inline: auto;
   position: relative;
 }
