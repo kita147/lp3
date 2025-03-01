@@ -1259,7 +1259,7 @@ a {
 @media (min-width: 768px) {
     .course__box-text {
         font-size: 1.7rem;
-        line-height: 1.6;
+        line-height: 1.65;
         letter-spacing: 0.07em;
     }
 }
@@ -1366,7 +1366,7 @@ a {
 }
 
 .voice__title-under-margin {
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.6rem;
 }
 
 @media (min-width: 768px) {
@@ -1375,11 +1375,34 @@ a {
     }
 }
 
+/* スライダーの設定ここから ---------------------- */
+.swiper__container {
+    position: relative; //ページネーションの親要素にするため
+}
+
+.swiper {
+    width: 31rem; //スライドの横幅
+    overflow: visible; //左右のスライダーも表示
+
+    @media (min-width: 768px) {
+        width: 96rem; //スライダーの横幅
+    }
+}
+
+.swiper-slide {
+    margin-left: 0.1rem; //カンプと一致させるため
+
+    @media (min-width: 768px) {
+        margin-left: 0;
+    }
+}
+
 .voice__box-title {
-    height: 4.6rem;
+    height: 4.5rem;
     font-size: 1.8rem;
     background-color: $main-pink;
     color: #fff;
+    text-align: center;
     padding: 0.8rem;
     border: solid 1px $main-pink;
     border-radius: 1rem 1rem 0 0;
@@ -1390,7 +1413,7 @@ a {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    padding: 1.5rem 2rem 1.1rem;
+    padding: 1.4rem 2rem 1.1rem 1.7rem;
     border: solid 1px $main-pink;
     border-radius: 0 0 1rem 1rem;
 }
@@ -1419,32 +1442,14 @@ a {
     letter-spacing: 0;
 }
 
-/* スライダーの設定ここから ---------------------- */
-.swiper__container {
-    width: 30.9rem; //スライダーの横幅
-    margin-inline: auto; //スライダーを中央揃え
-    position: relative;
-}
-
-@media (min-width: 768px) {
-    .swiper__container {
-        width: 96rem; //スライダーの横幅
-    }
-}
-
-.swiper {
-    overflow: visible; //左右のスライダーも表示
-}
-
 /* ドットの大きさを変更 */
 .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-/* ドットの間隔を変更 */
-.swiper-pagination-bullet {
-    margin: 0 0.75rem !important;
+:root {
+    --swiper-pagination-bullet-horizontal-gap: 0.75rem; //ドットの間隔を変更
 }
 
 /* ドットの非アクティブ色を変更 */
