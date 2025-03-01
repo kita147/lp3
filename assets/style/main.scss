@@ -857,11 +857,11 @@ a {
     }
 }
 
-.point__box1 {
+.point__box--first {
     margin-top: 2.8rem;
 }
 
-.point__box2 {
+.point__box--second {
     margin-top: 3.1rem;
 }
 
@@ -870,8 +870,8 @@ a {
 }
 
 @media (min-width: 768px) {
-    .point__box1,
-    .point__box2,
+    .point__box--first,
+    .point__box--second,
     .point__box3 {
         margin-top: 5rem;
     }
@@ -900,7 +900,7 @@ a {
     border-radius: 0 0 1rem 1rem;
 }
 
-.point1-contents {
+.point__contents--fitst {
     @include point-contents(1.5rem 2rem 1.7rem);
 
     @media (min-width: 1024px) {
@@ -908,7 +908,7 @@ a {
     }
 }
 
-.point2-contents {
+.point__contents--second {
     @include point-contents(1.6rem 2rem 1.6rem);
 
     @media (min-width: 1024px) {
@@ -936,7 +936,7 @@ a {
     }
 }
 
-.common-layout-lr {
+.point__layout--lr {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -944,12 +944,12 @@ a {
 }
 
 @media (min-width: 768px) {
-    .common-layout-lr {
+    .point__layout--lr {
         width: 50.5rem;
     }
 }
 
-.common-layout-center {
+.point__layout--center {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1040,7 +1040,7 @@ a {
     }
 }
 
-.common-layout-glid {
+.point__layout--glid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr); /* SP（スマホ）では3列 */
@@ -1048,7 +1048,7 @@ a {
 }
 
 @media (min-width: 768px) {
-    .common-layout-glid {
+    .point__layout--glid {
         grid-template-columns: repeat(6, 1fr);
         padding: 0.5rem 2rem;
     }

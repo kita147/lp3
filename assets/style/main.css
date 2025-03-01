@@ -817,11 +817,11 @@ a {
     margin-right: 0.3rem;
   }
 }
-.point__box1 {
+.point__box--first {
   margin-top: 2.8rem;
 }
 
-.point__box2 {
+.point__box--second {
   margin-top: 3.1rem;
 }
 
@@ -830,8 +830,8 @@ a {
 }
 
 @media (min-width: 768px) {
-  .point__box1,
-  .point__box2,
+  .point__box--first,
+  .point__box--second,
   .point__box3 {
     margin-top: 5rem;
   }
@@ -851,26 +851,26 @@ a {
     padding: 1.5rem;
   }
 }
-.point1-contents {
+.point__contents--fitst {
   background-color: #fff;
   padding: 1.5rem 2rem 1.7rem;
   border: solid 1px #fa7da3;
   border-radius: 0 0 1rem 1rem;
 }
 @media (min-width: 1024px) {
-  .point1-contents {
+  .point__contents--fitst {
     padding: 2.6rem 4rem 3.4rem;
   }
 }
 
-.point2-contents {
+.point__contents--second {
   background-color: #fff;
   padding: 1.6rem 2rem 1.6rem;
   border: solid 1px #fa7da3;
   border-radius: 0 0 1rem 1rem;
 }
 @media (min-width: 1024px) {
-  .point2-contents {
+  .point__contents--second {
     padding: 2.4rem 4rem 2.7rem;
   }
 }
@@ -898,7 +898,7 @@ a {
     line-height: 1.6;
   }
 }
-.common-layout-lr {
+.point__layout--lr {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -906,11 +906,11 @@ a {
 }
 
 @media (min-width: 768px) {
-  .common-layout-lr {
+  .point__layout--lr {
     width: 50.5rem;
   }
 }
-.common-layout-center {
+.point__layout--center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -995,7 +995,7 @@ a {
     margin-bottom: 3.4rem;
   }
 }
-.common-layout-glid {
+.point__layout--glid {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr); /* SP（スマホ）では3列 */
@@ -1003,7 +1003,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .common-layout-glid {
+  .point__layout--glid {
     grid-template-columns: repeat(6, 1fr);
     padding: 0.5rem 2rem;
   }
