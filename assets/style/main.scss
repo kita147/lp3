@@ -343,22 +343,11 @@ a {
     font-size: 4.2rem;
 }
 
-.hero__text-kao {
-    font-size: 1.8rem;
-    margin-top: 0.8rem;
-}
-
 @media (min-width: 768px) {
     .hero__text-zen {
         font-size: 12.215rem;
         text-shadow: 0 0 30px rgba(250, 125, 163, 0.8);
         filter: drop-shadow(0 0 20px rgba(250, 125, 163, 0.8));
-    }
-
-    .hero__text-kao {
-        font-size: 3.6rem;
-        margin-top: 2.3rem;
-        margin-right: -3.1rem;
     }
 }
 
@@ -792,12 +781,12 @@ a {
     }
 }
 
-.info__text--small {
+.info__text-small {
     font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
-    .info__text--small {
+    .info__text-small {
         font-size: 1.796rem;
     }
 }
@@ -936,6 +925,18 @@ a {
     }
 }
 
+.point__box-text-palt {
+    text-align: left;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+    .point__box-text-palt {
+        letter-spacing: 0.085em;
+    }
+}
+
 .point__layout--lr {
     width: 100%;
     margin: 0 auto;
@@ -949,7 +950,7 @@ a {
     }
 }
 
-.point__layout--center {
+.point__layout-center {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1040,7 +1041,7 @@ a {
     }
 }
 
-.point__layout--glid {
+.point__layout-glid {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr); /* SP（スマホ）では3列 */
@@ -1048,7 +1049,7 @@ a {
 }
 
 @media (min-width: 768px) {
-    .point__layout--glid {
+    .point__layout-glid {
         grid-template-columns: repeat(6, 1fr);
         padding: 0.5rem 2rem;
     }
