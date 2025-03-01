@@ -204,13 +204,13 @@ a {
     }
 }
 
-@mixin btn-style($bg-color, $btn-width) {
+@mixin btn-style($bg-color, $btn-width, $padding-mobile, $padding-desktop) {
     width: $btn-width;
     height: 3.1rem;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.2rem;
+    padding: $padding-mobile;
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: 0;
@@ -227,12 +227,12 @@ a {
     @media (min-width: 768px) {
         height: 5.1rem;
         font-size: 2.1rem;
-        padding: 1rem 2rem;
+        padding: $padding-desktop;
     }
 }
 
 .btn-contact {
-    @include btn-style($main-pink, 10.7rem);
+    @include btn-style($main-pink, 10.7rem, 1rem 1.2rem, 1rem 2.8rem);
 
     @media (min-width: 768px) {
         width: 19rem;
@@ -240,7 +240,7 @@ a {
 }
 
 .btn-reservation {
-    @include btn-style($light-green, 17.4rem);
+    @include btn-style($light-green, 17.4rem, 1rem 1.2rem, 1rem 2.5rem);
 
     @media (min-width: 768px) {
         width: 29.7rem;
@@ -335,9 +335,10 @@ a {
 
 @media (min-width: 768px) {
     .hero__title-image {
-        width: 53rem;
+        width: 53.8rem;
         height: auto;
         padding: 0;
+        margin-left: -1rem;
     }
 }
 
@@ -354,6 +355,7 @@ a {
 }
 
 .hero__box-right {
+    position: relative;
     width: 18.7rem;
     height: 10.7rem;
     display: flex;
@@ -420,6 +422,9 @@ a {
 
 @media (min-width: 768px) {
     .hero__text-zero {
+        position: absolute;
+        top: 1.2rem;
+        left: 16.6rem;
         width: 16.9rem;
         font-size: 17rem;
         margin-left: 2.3rem;
@@ -433,6 +438,7 @@ a {
 @media (min-width: 768px) {
     .hero__text-yen {
         font-size: 8.1rem;
+        margin-bottom: 0.7rem;
     }
 }
 

@@ -211,7 +211,7 @@ a {
   .btn-contact {
     height: 5.1rem;
     font-size: 2.1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -243,7 +243,7 @@ a {
   .btn-reservation {
     height: 5.1rem;
     font-size: 2.1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -335,9 +335,10 @@ a {
 
 @media (min-width: 768px) {
   .hero__title-image {
-    width: 53rem;
+    width: 53.8rem;
     height: auto;
     padding: 0;
+    margin-left: -1rem;
   }
 }
 .hero__text-zen {
@@ -352,6 +353,7 @@ a {
   }
 }
 .hero__box-right {
+  position: relative;
   width: 18.7rem;
   height: 10.7rem;
   display: flex;
@@ -415,6 +417,9 @@ a {
 
 @media (min-width: 768px) {
   .hero__text-zero {
+    position: absolute;
+    top: 1.2rem;
+    left: 16.6rem;
     width: 16.9rem;
     font-size: 17rem;
     margin-left: 2.3rem;
@@ -427,6 +432,7 @@ a {
 @media (min-width: 768px) {
   .hero__text-yen {
     font-size: 8.1rem;
+    margin-bottom: 0.7rem;
   }
 }
 .hero__box-lower {
