@@ -29,6 +29,11 @@ html {
     scroll-padding-top: 10rem;
 }
 
+html,
+body {
+    overflow-y: scroll;
+}
+
 /* 変数 -----------------------------------------*/
 $main-pink: #fa7da3;
 $light-pink: #fdf0f5;
